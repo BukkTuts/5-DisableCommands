@@ -1,0 +1,29 @@
+main: com.bukkthat.disablecommands.DisableCommands
+name: DisableCommands
+version: 1.0.0
+
+commands:
+  disablecommands:
+    description: Allows addition, listing, and removing commands from the forbidden commands list.
+    usage: |
+      /disablecommands - Shows the help menu
+      /disablecommands add <command> - Adds to the disabled commands list (Don't add a /)
+      /disablecommands remove <command> - Removes a command from the disabled commands list.
+      /disablecommands list - Lists all the disabled commands.
+
+permissions:
+  disablecommands.*:
+    description: Gives all permissions since we gave it children
+    children:
+      disablecommands.bypass: true
+      disablecommands.add: true
+      disablecommands.remove: true
+      disablecommands.list: true
+  disablecommands.bypass:
+    description: Bypasses command blocker
+  disablecommands.add:
+    description: Adds to the disabled commands list
+  disablecommands.remove:
+    description: Removes from the disabled commands list
+  disablecommands.list:
+    description: Lists all the disabled commands

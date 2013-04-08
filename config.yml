@@ -1,0 +1,9 @@
+#Comments in a YAML file are started with a hashtag (#)
+#
+#This is a string list
+forbidden-commands:
+  - spawn
+  - tp
+#
+#This is a integer
+height: 40
