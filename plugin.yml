@@ -1,6 +1,7 @@
 main: com.bukkthat.disablecommands.DisableCommands
 name: DisableCommands
 version: 1.0.0
+description: Customizably disable commands below a customizable depth
 
 commands:
   disablecommands:
